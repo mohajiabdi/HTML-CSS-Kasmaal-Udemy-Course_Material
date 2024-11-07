@@ -14,130 +14,137 @@
   <body>
     <!-- Heading Elemetn H1  -->
     <!-- M -->
-    <header class="main-header">
-      <h1>📘 The Kasmaal Magazine</h1>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="main-header">
+        <h1>📘 The Kasmaal Magazine</h1>
 
-      <nav>
-        <a href="Lists.html">Lists</a>
-        <a href="Images.html">Images</a>
-        <a href="Text Elements.html">Texts</a>
-        <a href="#html">HTML</a>
-      </nav>
-    </header>
+        <nav>
+          <a href="Lists.html">Lists</a>
+          <a href="Images.html">Images</a>
+          <a href="Text Elements.html">Texts</a>
+          <a href="#html">HTML</a>
+        </nav>
+      </header>
 
-    <main>
-      <header>
-        <h2>The Basic Language of the Web: HTML</h2>
+      <main>
+        <header class="post-header">
+          <h2>The Basic Language of the Web: HTML</h2>
 
-        <img
-          src="img/mohaji.jpg"
-          alt="Headshot Image"
-          width="80px"
-          title="Headshot Image of the Author"
-        />
+          <img
+            src="img/mohaji.jpg"
+            alt="Headshot Image"
+            width="80px"
+            title="Headshot Image of the Author"
+          />
 
-        <p id="author">
-          Posted by <strong>Mo Haji Abdi</strong> on Monday, June 21st 2027
+          <p id="author">
+            Posted by <strong>Mo Haji Abdi</strong> on Monday, June 21st 2027
+          </p>
+
+          <img
+            src="img/post-img.jpg"
+            alt="Post Image"
+            title="Code on Screen"
+            class="post-image"
+          />
+          <button><a href="#">⬆️Top</a></button>
+        </header>
+        <p>
+          All modern websites and web applications are built using three
+          fundamental technologies: HTML, CSS and JavaScript. These are the
+          languages of the web.
+        </p>
+        <p>
+          In this post, let's focus on HTML. We will learn what HTML is all
+          about, and why you too should learn it.
         </p>
 
-        <img
-          src="img/post-img.jpg"
-          alt="Post Image"
-          width="500px"
-          title="Code on Screen"
-        />
-      </header>
-      <p>
-        All modern websites and web applications are built using three
-        fundamental technologies: HTML, CSS and JavaScript. These are the
-        languages of the web.
-      </p>
-      <p>
-        In this post, let's focus on HTML. We will learn what HTML is all about,
-        and why you too should learn it.
-      </p>
+        <h3 id="html">What is HTML?</h3>
+        <p>
+          HTML stands for <strong>H</strong>yperText <strong>M</strong>arkup
+          <strong>L</strong>anguage. It's a markup language that web developers
+          use to structure and describe the content of a webpage (not a
+          programming language).
+        </p>
 
-      <h3 id="html">What is HTML?</h3>
-      <p>
-        HTML stands for <strong>H</strong>yperText <strong>M</strong>arkup
-        <strong>L</strong>anguage. It's a markup language that web developers
-        use to structure and describe the content of a webpage (not a
-        programming language).
-      </p>
+        <!-- This paragraph is about elements and its properties-->
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
 
-      <!-- This paragraph is about elements and its properties-->
-      <p>
-        HTML consists of elements that describe different types of content:
-        paragraphs, links, headings, images, video, etc. Web browsers understand
-        HTML and render HTML code as websites.
-      </p>
+        <p>In HTML, each element is made up of 3 parts:</p>
+        <ol>
+          <li class="first-li">The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
 
-      <p>In HTML, each element is made up of 3 parts:</p>
-      <ol>
-        <li class="first-li">The opening tag</li>
-        <li>The closing tag</li>
-        <li>The actual element</li>
-      </ol>
-
-      <p>
-        You can learn More at
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          target="_blank"
-        >
-          MDN Web Docs.</a
-        >
-      </p>
-      <h2>Why Should you Learn HTML?</h2>
-      <p>
-        There are countless reasons for learning the fundamental language of the
-        web. Here are 5 of them:
-      </p>
-
-      <ul>
-        <li class="first-li">
-          To be able to use the fundamental web dev language
-        </li>
-        <li>
-          To hand-craft beautiful websites instead of relying on tools like
-        </li>
-        <li>To build web applications</li>
-        <li>To impress friends</li>
-        <li>To have fun 😃</li>
-      </ul>
-
-      <p>Hopefully you learned something new here. See you next time!</p>
-    </main>
-
-    <aside>
-      <h4>Related Posts</h4>
-      <ul class="related">
-        <li>
-          <img src="img/Person Coding.jpg" alt="Person coding" width="75px" /><a
-            href="#"
-            >How to Learn Web Development</a
+        <p>
+          You can learn More at
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
           >
-          <p class="related-author">By Ali Mohamed</p>
-        </li>
-        <li>
-          <img src="img/programming.png" alt="Person coding" width="75px" /><a
-            href="#"
-            >Unkown Power of CSS</a
+            MDN Web Docs.</a
           >
-          <p class="related-author">By Asho Bashiir</p>
-        </li>
-        <li>
-          <img src="img/related-1.jpg" alt="Person coding" width="75px" /><a
-            href="#"
-            >Why Javascript is Awesome</a
-          >
-          <p class="related-author">By Adan Mahad</p>
-        </li>
-      </ul>
-    </aside>
+        </p>
+        <h3>Why Should you Learn HTML?</h3>
+        <p>
+          There are countless reasons for learning the fundamental language of
+          the web. Here are 5 of them:
+        </p>
 
-    <footer>
-      <p id="copyright">Copyright &copy; By Kasmaal Internship Program</p>
-    </footer>
+        <ul>
+          <li class="first-li">
+            To be able to use the fundamental web dev language
+          </li>
+          <li>
+            To hand-craft beautiful websites instead of relying on tools like
+          </li>
+          <li>To build web applications</li>
+          <li>To impress friends</li>
+          <li>To have fun 😃</li>
+        </ul>
+
+        <p>Hopefully you learned something new here. See you next time!</p>
+      </main>
+
+      <aside>
+        <h4>Related Posts</h4>
+        <ul class="related">
+          <li>
+            <img
+              src="img/Person Coding.jpg"
+              alt="Person coding"
+              width="75px"
+            /><a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Ali Mohamed</p>
+          </li>
+          <li>
+            <img src="img/programming.png" alt="Person coding" width="75px" /><a
+              href="#"
+              >Unkown Power of CSS</a
+            >
+            <p class="related-author">By Asho Bashiir</p>
+          </li>
+          <li>
+            <img src="img/related-1.jpg" alt="Person coding" width="75px" /><a
+              href="#"
+              >Why Javascript is Awesome</a
+            >
+            <p class="related-author">By Adan Mahad</p>
+          </li>
+        </ul>
+      </aside>
+
+      <footer>
+        <p id="copyright" class="copyright">
+          Copyright &copy; By Kasmaal Internship Program
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

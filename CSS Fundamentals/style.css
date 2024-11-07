@@ -1,3 +1,49 @@
+* {
+  /* border-top: 5px solid #1098ad; */
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: violet;
+  font-family: sans-serif;
+  border-top: 4px solid #1098ad;
+  position: relative;
+}
+.container {
+  width: 680px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  position: relative;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 30px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
+  /* padding: 20px 30px 40px 50px; */
+  margin-bottom: 40px;
+}
+.post-header {
+  margin-bottom: 20px;
+  /* position: relative; */
+}
+main {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 6px groove #1098ad;
+  border-bottom: 6px solid #1098ad;
+  /* border-left: 6px solid #1098ad;
+  border-right: 6px solid #1098ad; */
+  padding: 20px 0;
+  width: 500px;
+}
+
 h1,
 h2,
 h3,
@@ -12,6 +58,11 @@ h2,
 h3 {
   color: #1098ad;
 }
+
+ul,
+ol {
+  margin-left: 50px;
+}
 h1 {
   font-size: 22px;
   text-transform: uppercase;
@@ -20,25 +71,39 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 20px;
+  /* background-color: orange; */
+  position: relative;
 }
 
 p {
   font-size: 20px;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 li {
   font-size: 18px;
+  margin-bottom: 10px;
+  /* display: inline;
+  background-color: gold;
+  margin-left: 10px; */
+}
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -59,8 +124,17 @@ main header p {
 
 #copyright {
   font-size: 16px;
+  color: blue;
 }
-
+.copyright {
+  color: red;
+}
+footer p {
+  color: gold;
+}
+footer p#copyright {
+  color: green;
+}
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -71,18 +145,6 @@ main header p {
 } */
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 6px groove #1098ad;
-  border-bottom: 6px solid #1098ad;
-  /* border-left: 6px solid #1098ad;
-  border-right: 6px solid #1098ad; */
 }
 
 /* .first-li {
@@ -130,3 +192,79 @@ a:active {
 }
 
 /* LVHA */
+
+strong {
+  color: red;
+}
+
+.post-image {
+  width: 100%;
+}
+
+nav a:link {
+  /* background-color: gold; */
+  display: inline-block;
+  /* height: 100px;
+  width: 100px; */
+  margin-right: 30px;
+  margin-top: 10px;
+  /* padding-top: 100px;
+  padding-bottom: 200px; */
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 20px;
+  font-size: 20px;
+  position: absolute;
+  /*
+  Top 
+  Right
+  Bottom
+  Left
+  */
+  bottom: 70px;
+
+  right: 30px;
+}
+button a:link {
+  text-decoration: none;
+}
+
+h1::first-letter {
+  font-style: normal;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 100px;
+
+  margin-right: -20px;
+}
+
+/* p::first-line {
+  color: red;
+} */
+
+p::first-letter {
+  color: purple;
+}
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2::before {
+  content: "Cinwaan";
+  background-color: #ffe70e;
+  font-size: 16px;
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  font-weight: bold;
+  color: #000;
+}
