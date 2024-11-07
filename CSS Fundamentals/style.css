@@ -200,6 +200,9 @@ strong {
 .post-image {
   width: 100%;
 }
+/* nav {
+  text-align: center;
+} */
 
 nav a:link {
   /* background-color: gold; */
@@ -210,6 +213,11 @@ nav a:link {
   margin-top: 10px;
   /* padding-top: 100px;
   padding-bottom: 200px; */
+  text-align: center;
+}
+
+.main-header nav a:link {
+  margin-top: 10px;
 }
 
 nav a:link:last-child {
@@ -229,6 +237,7 @@ button {
   bottom: 70px;
 
   right: 30px;
+  cursor: pointer;
 }
 button a:link {
   text-decoration: none;
