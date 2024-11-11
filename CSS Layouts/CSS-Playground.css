@@ -1,0 +1,48 @@
+* {
+  font-family: sans-serif;
+  color: #8511e3;
+}
+
+.test {
+  color: aqua;
+}
+
+#test {
+  color: blue;
+}
+
+p.test {
+  color: green;
+}
+
+.test2 {
+  color: yellow;
+}
+
+p.test.test2 {
+  color: purple;
+}
+
+h1 {
+  color: orange;
+}
+p#test {
+  color: red;
+}
+
+div {
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+  display: block;
+  /* visibility: hidden; */
+  margin-top: 40px;
+}
+span {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  display: inline;
+  margin-top: 300px;
+  margin-left: 30px;
+}
