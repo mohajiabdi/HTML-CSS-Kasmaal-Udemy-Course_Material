@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .el-1{
+            background-color: blueviolet;
+            order: 0;
+        }
+        .el-2{
+            background-color:orangered;
+            /* order: -2; */
+        }
+        .el-3{
+            background-color: green;
+        }
+        .el-4{
+            background-color: crimson;
+            height: 150px;
+            /* flex-grow: 1; */
+        }
+        .el-5{
+            background-color: goldenrod;
+            /* order: -1;
+            align-self: flex-start; */
+            order: 1;
+        }
+        .el-6{
+            background-color: blue;
+            order: 0;
+        }
+        .el-7{
+            background-color: palevioletred;
+            /* flex-grow:1 ; */
+            order: -1;
+            flex-grow: 2;
+        }
+        .el-8{
+            background-color: steelblue;
+           /* flex: flex-grow flex-shrink flex-basis */
+            /* flex: 1 1 50%; */
+          
+        }
+        .el{
+           
+            /* Default size: 
+           flex-grow: 0;
+           flex-shrink:1;
+           flex-basis: auto */
+
+           flex-basis: 200px;
+           flex-grow: 1;
+           flex-shrink: 1;
+
+           /* flex: flex-grow flex-shrink flex-basis */
+
+           flex: 1 1 auto;
+
+        }
+      
+        /* Flexbox Container */
+        .container{
+            font-family: sans-serif;
+            background-color: #ddd;
+            font-size: 40px;
+            margin: 40px;
+
+            /* Flexbox */
+
+            display: flex;
+            
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            align-items: center;
+            justify-content: center;
+            /* gap: 50px; */
+            
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="el el-1">HTML</div>
+        <div class="el el-2">and</div>
+        <div class="el el-3">CSS</div>
+        <div class="el el-4">are</div>
+        <div class="el el-5">Amazing</div>
+        <div class="el el-6">Language</div>
+        <div class="el el-7">To</div>
+        <div class="el el-8">Learn</div>
+    </div>
+</body>
+</html>
