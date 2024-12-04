@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        /* Grid container */
+        .el--1{
+            background-color: blueviolet;}
+        .el--2{background-color: green;}
+        .el--3{background-color: Orange;}
+        .el--4{background-color: pink;}
+        .el--5{
+            background-color: #1098ad;
+            /* height: 150px; */
+            }
+        .el--6{background-color: brown;}
+        .el--7{
+            background-color: crimson;}
+        .el--8{background-color: blue;}
+
+
+        /* .el--1{
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+
+        .el--7{
+            grid-column: 2;
+            grid-row: 1;
+        } */
+
+       
+
+       .container--1 {
+        font-family: sans-serif;
+        font-size: 30px;
+        background-color: #ddd;
+        margin: 20px;
+        /* height: 500px; */
+
+        /* CSS Grid */
+        display: grid;
+        /* grid-template-columns: 200px 200px 1fr; */
+        /* grid-template-rows: 200px 100px ; */
+        /* grid-template-columns: 3fr 1fr ; */
+        /*  grid-template-rows: 100px 100px 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+       
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: 1fr 1fr;
+        /* gap: 20px; */
+        column-gap: 20px;
+        row-gap: 50px;
+       
+        display: none;
+
+       }
+
+
+       .container--2{
+        font-family: sans-serif;
+        font-size: 40px;
+        margin: 40px;
+        background-color: #ddd;
+        width: 700px;
+        height: 600px;
+
+        /* css grids */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        
+
+        /* Waxaa lagu hagaajiya Grid Items halka ay ka istaagaayan grid-containerka */
+        /* justify-content: center; */
+        justify-content: space-evenly;
+        /* align-content: center; */
+        align-content: space-evenly;
+
+
+        /* Waxaa lagu haajiyaa Grid-items ka dhaxdooda waxa ku jira */
+        justify-items:center;
+        align-items:center;
+       
+       }
+
+       .el--2{
+        align-self:start ;
+        justify-self: end;
+       }
+    </style>
+</head>
+<body>
+    <div class="container--1">
+        <div class="el el--1">HTML</div>
+        <div class="el el--2">and</div>
+        <div class="el el--3">CSS</div>
+        <div class="el el--4">are</div>
+        <div class="el el--5">amazing</div>
+        <div class="el el--6">language</div>
+        <div class="el el--7">to</div>
+        <div class="el el--8">learn</div>
+    </div>
+    <div class="container--2">
+        <div class="el el--1">1</div>
+        <div class="el el--2">2</div>
+        <div class="el el--3">3</div>
+        <div class="el el--4">4</div>
+        <div class="el el--5">5</div>
+        <div class="el el--6">6</div>
+        <!-- <div class="el el--7">7</div>
+        <div class="el el--8">8</div> -->
+    </div>
+</body>
+</html>
