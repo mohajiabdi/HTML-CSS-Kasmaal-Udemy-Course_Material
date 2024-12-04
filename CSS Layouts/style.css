@@ -24,7 +24,7 @@ body {
   /* padding-left: 40px;
   padding-right: 40px; */
   /* padding: 20px 30px 40px 50px; */
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   /* display: flow-root; */
 }
 .post-header {
@@ -32,7 +32,7 @@ body {
   /* position: relative; */
 }
 main {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 aside {
@@ -350,7 +350,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* margin-bottom: 30px; */
+   margin-bottom: 30px; 
 }
 
 .related-author{
@@ -367,7 +367,7 @@ footer {
   margin-bottom: 5px;
   display: block;
 } 
-
+/* 
 .row{
   display: flex;
   gap: 75px;
@@ -382,3 +382,31 @@ main{
   flex-basis: 925px;
   margin-bottom: 0;
 }
+ */
+
+
+ /* CSS Grids */
+
+ .container {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+ }
+
+ .main-header{
+  grid-column: 1/-1;
+ }
+
+ main{}
+
+ aside{
+ 
+ }
+
+ footer{
+  grid-column: 1/-1;
+}
+
+
