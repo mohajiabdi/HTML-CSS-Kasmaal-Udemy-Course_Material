@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* body {
+    margin-left: 30px;
+} */
+
+.coffee-container{
+    width: 960px;
+    margin: 0 auto;
+    /* background-color: gold; */
+}
+.shop{
+    margin-top: 30px;
+    display: inline-block;
+}
+.author{
+    margin: 30px 0;
+}
+header, section{
+    margin-bottom: 48px;
+}
+
+h2{
+    margin-bottom: 48px;
+}
+
+.special{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 80px;
+}
+
+.special h2{
+    grid-column: 1/-1;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    margin-top: 100px;
+}
+
+.drink{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    columns: 50px;
+    
+}
+
+.blends{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* column-gap: 80px; */
+}
+.best-selling{
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+}
+
+.cart{
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+}
+
+h4{
+    margin: 30px 0;
+}
+ul li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+footer{
+    margin: 100px 0;
+}
+
