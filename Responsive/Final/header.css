@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: brown;
+  font-weight: 600;
+}
+
+.humburger-icon {
+  display: none;
+  cursor: pointer;
+  
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Responsove Style */
+@media (max-width: 768px) {
+   
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .menu-toggle:checked + .humburger-icon + ul {
+    display: flex;
+  }
+  .humburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .main-nav ul li {
+    border-bottom: 1px soild #e9ecef;
+    padding: 5px 0;
+  }
+}

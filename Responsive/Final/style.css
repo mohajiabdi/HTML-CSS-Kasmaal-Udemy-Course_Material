@@ -32,7 +32,8 @@ body {
 }
 
 .coffee-container{
-    width: 960px;
+    width: 95%;
+    max-width: 960px;
     margin: 0 auto;
     /* background-color: gold; */
 }
@@ -194,3 +195,151 @@ footer{
     color: #495057;
 }
 
+
+
+
+/*============================= Nav CSS ============================== */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  .main-nav ul li a {
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+  }
+  
+  .humburger-icon {
+    display: none;
+    cursor: pointer;
+    
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+
+
+
+/* ========================== Responsive CSS ========================================== */
+
+@media(max-width: 768px){
+    h1{
+        font-size: 36px ;
+    }
+    h2{
+        font-size: 28px;
+    }
+    header , .special, .blends, .testimonial{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    header img{
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    header div{
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .hero-image{
+        order: -1;
+    }
+    .cart{
+       flex-direction:column;
+       gap: 20px 
+    }
+    .btn--small{
+        padding: 8px 12px;
+        font-size: 14px;
+        width: 20%;
+        margin: 0 auto ;
+    }
+    .blends div{
+        margin-bottom: 12px;
+    }
+
+    .testimonial img{
+        margin: 0 auto ;
+        width: 100%;
+        max-width: 500px;
+      
+
+    }
+    .testimonial-box{
+        margin: 0 auto;
+        max-width: 500px;
+        
+    }
+    .blends ul {
+        text-align:center;
+    }
+    .blends ul li span{
+       font-size: 18px;
+    }
+
+    .coffee-grid{
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer{
+        margin: 0 auto;
+        max-width: 500px;
+        width: 80%;
+    }
+
+  /* =================================================== Nav CSS For Mobiles and Ipads ===============================*/
+
+   .main-nav{
+    justify-content: end;
+   }  
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .menu-toggle:checked + .humburger-icon + ul {
+    display: flex;
+  }
+  .humburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .main-nav ul li {
+    border-bottom: 1px soild #e9ecef;
+    padding: 5px 0;
+  }
+    
+}
+
+@media (max-width: 480px){
+    .btn--small{
+        width: 40%;
+    }
+}

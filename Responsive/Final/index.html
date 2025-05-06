@@ -7,11 +7,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
 
     <title>Coffee</title>
 </head>
 <body>
     <div class="coffee-container">
+        <nav class="main-nav">
+            <input type="checkbox"  id="menu-toggle" class="menu-toggle">
+            <!-- <label for="menu-toggle" class="menu-icon">&#9776;</label> -->
+            <label for="menu-toggle" class="humburger-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
         <header>
             <div>
                 
@@ -19,7 +34,7 @@
                 <p class="header-text">From bean to brew, our dedication to quality ensures the perfect cup every time. Sourced from the finest farms, roasted with precision.</p>
                 <a href="#" class="btn btn--big">Shop Coffee</a>
             </div>
-            <img src="hero-2.jpg" alt="Coffee HEro" width="450">
+            <img src="hero-2.jpg" alt="Coffee HEro" width="450" class="hero-image">
             
         </header>
 
