@@ -34,27 +34,6 @@ body {
   /* background-color: gold; */
 }
 
-nav {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 20px 0;
-}
-nav ul {
-  display: flex;
-  gap: 50px;
-  list-style: none;
-}
-nav ul li {
-  font-size: 18px;
-  font-weight: 600;
-  color: #343a40;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #640d14;
-}
-
 h1 {
   font-size: 47px;
   line-height: 1.1;
@@ -204,6 +183,43 @@ footer {
   color: #495057;
 }
 
+/* Nav CSS */
+.main-nav {
+  display: flex;
+  justify-content: space-between; /* Space out the icon/label and the list */
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  position: relative; /* Needed for absolute positioning of the menu */
+}
+
+.hamburger-icon {
+  display: none; /* Initially hide the hamburger icon/label on larger screens */
+  cursor: pointer;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #640d14;
+}
+
+.menu-toggle {
+  display: none; /* Hide the actual checkbox */
+}
+
 /* Responsive styles */
 @media (max-width: 1200px) {
   .coffee-container {
@@ -269,6 +285,41 @@ footer {
   .cart {
     flex-direction: column;
     gap: 20px;
+  }
+
+  /*================================ nav CSS ======================================*/
+
+
+  .main-nav ul {
+    display: none; /* Initially hide the full navigation on smaller screens */
+    flex-direction: column; /* Stack the links vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    background-color: #f8f9fa; /* Add a background color for the dropdown */
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it's above other content */
+  }
+
+  /* Show the menu when the checkbox is checked (using the checked and sibling selectors) */
+  .menu-toggle:checked + .hamburger-icon + ul {
+    display: flex;
+  }
+
+  .main-nav ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .main-nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  .hamburger-icon {
+    display: block; /* Show the hamburger icon/label on smaller screens */
   }
 }
 
