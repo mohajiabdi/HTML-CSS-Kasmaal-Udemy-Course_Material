@@ -295,7 +295,7 @@ footer {
     flex-direction: column; /* Stack the links vertically */
     position: absolute;
     top: 60px; /* Adjust based on your header height */
-    left: 0;
+    right: 0;
     background-color: #f8f9fa; /* Add a background color for the dropdown */
     width: 100%;
     text-align: center;
@@ -307,6 +307,7 @@ footer {
   /* Show the menu when the checkbox is checked (using the checked and sibling selectors) */
   .menu-toggle:checked + .hamburger-icon + ul {
     display: flex;
+    
   }
 
   .main-nav ul li {
